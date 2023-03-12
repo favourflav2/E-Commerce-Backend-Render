@@ -35,8 +35,8 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         mode: "payment",
         //customer_email:email,
         shipping_address_collection: { allowed_countries: ["US", "CA"] },
-        success_url: `${process.env.CLIENT_URL}/success/?success=true`,
-        cancel_url: `${process.env.CLIENT_URL}?canceled=true`,
+        success_url: `https://ecommerce-app-4n5y.onrender.com//success/?success=true`,
+        cancel_url: `https://ecommerce-app-4n5y.onrender.com/?canceled=true`,
         line_items: lineItems,
         payment_method_types: ["card"],
       });
